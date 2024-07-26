@@ -2189,8 +2189,6 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    width: 300px;
-    padding: 20px;
     position: sticky;
     top: 60px;
     max-height: max-content;
