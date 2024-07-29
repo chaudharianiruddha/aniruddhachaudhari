@@ -324,6 +324,13 @@ main {
   gap: 15px;
 }
 
+.profile-image {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Ensure the image covers the specified dimensions */
+}
+
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
