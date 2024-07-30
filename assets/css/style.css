@@ -325,10 +325,9 @@ main {
 }
 
 .profile-image {
-  width: 150px; /* Adjust width as needed */
-  height: 150px; /* Adjust height as needed */
-  border-radius: 40%; /* Make it circular */
-  object-fit: cover; /* Ensure the image covers the specified dimensions */
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .avatar-box {
