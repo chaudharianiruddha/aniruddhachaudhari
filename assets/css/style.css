@@ -427,29 +427,11 @@ main {
 
 .contact-info address { font-style: normal; }
 
-/*
 .social-list {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
-  padding-bottom: 4px;
-  padding-left: 7px;
-}
-
-.social-item .social-link {
-  color: var(--light-gray-70);
-  font-size: 18px;
-}
-
-
-.social-item .social-link:hover { color: var(--light-gray); }
-*/
-
-.social-list {
-  display: flex;
-  justify-content: space-between; /* Adjust space between items */
-  gap: 15px; /* Add gap between items */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  gap: 30px; /* Adjust the gap between icons as needed */
   list-style: none; /* Remove default list styling */
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
