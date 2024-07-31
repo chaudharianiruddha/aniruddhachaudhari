@@ -1587,6 +1587,7 @@ textarea.form-input::-webkit-resizer {
   transition: var(--transition-1);
   border: none;
   cursor: pointer;
+  align-self: flex-start;
 }
 
 .form-btn::before {
