@@ -431,7 +431,7 @@ main {
   display: flex;
   justify-content: center; /* Center the icons horizontally */
   align-items: center; /* Center the icons vertically */
-  gap: 30px; /* Adjust the gap between icons as needed */
+  gap: 60px; /* Adjust the gap between icons as needed */
   list-style: none; /* Remove default list styling */
   padding: 0; /* Remove default padding */
   margin: 0; /* Remove default margin */
@@ -845,7 +845,7 @@ main {
 
 /**
  * skills 
- */
+ 
 
 .skills-title { margin-bottom: 20px; }
 
@@ -880,6 +880,69 @@ main {
   border-radius: inherit;
 }
 
+*/
+
+/**
+ * skills 
+ */
+
+.skills-title { margin-bottom: 20px; }
+
+.skills-list { padding: 20px; }
+
+.skills-item:not(:last-child) { margin-bottom: 15px; }
+
+.skill .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.skill .title-wrapper data {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+}
+
+.skill-progress-bg {
+  background: var(--jet);
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.skill-progress-fill {
+  background: var(--text-gradient-yellow);
+  height: 100%;
+  border-radius: inherit;
+}
+
+/* New styles for certification descriptions */
+.certifications {
+  margin-top: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0 20px; /* Adjust padding to match the overall design */
+}
+
+.skills-item {
+  margin-bottom: 20px;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.certification-description {
+  margin-top: 5px;
+  font-size: var(--fs-5);
+  color: var(--white-2); /* Adjust this color to your preference */
+}
 
 
 
