@@ -938,6 +938,10 @@ main {
   justify-content: space-between;
 }
 
+.title-wrapper h5 {
+  font-weight: bold; /* Make the heading bold */
+}
+
 .certification-description {
   margin-top: 5px;
   font-size: var(--fs-5);
