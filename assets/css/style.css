@@ -798,7 +798,7 @@ main {
   margin-left: 45px;
 }
 
-.timeline-item { position: relative; }
+.timeline-item { position: left; }
 
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
