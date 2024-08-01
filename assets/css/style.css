@@ -784,7 +784,16 @@ main {
  * education and experience 
  */
 
-.timeline { margin-bottom: 30px; }
+.article-title {
+  margin-bottom: 30px;
+}
+
+/**
+ * Education and Experience 
+ */
+.timeline {
+  margin-bottom: 30px;
+}
 
 .timeline .title-wrapper {
   display: flex;
@@ -798,9 +807,13 @@ main {
   margin-left: 45px;
 }
 
-.timeline-item { position: left; }
+.timeline-item {
+  position: relative; /* Changed from 'left' to 'relative' for proper positioning */
+}
 
-.timeline-item:not(:last-child) { margin-bottom: 20px; }
+.timeline-item:not(:last-child) {
+  margin-bottom: 20px;
+}
 
 .timeline-item-title {
   font-size: var(--fs-6);
@@ -842,16 +855,21 @@ main {
   line-height: 1.6;
 }
 
-
 /**
- * skills 
+ * Skills 
  */
+.skills-title {
+  margin-bottom: 20px;
+}
 
-.skills-title { margin-bottom: 20px; }
+.skills-list {
+  padding: 20px;
+  list-style: none;
+}
 
-.skills-list { padding: 20px; }
-
-.skills-item:not(:last-child) { margin-bottom: 15px; }
+.skills-item:not(:last-child) {
+  margin-bottom: 15px;
+}
 
 .skill .title-wrapper {
   display: flex;
@@ -907,14 +925,19 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-7);
   font-weight: var(--fw-300);
-	
 }
 
 .certification-description {
   margin-top: 5px;
   font-size: var(--fs-5);
+  color: var(--light-gray); /* Ensure the subtext is light grey */
 }
 
+/* Aligning the titles of sections to the left */
+.timeline-title-left {
+  text-align: left;
+  margin-left: 0; /* Ensure the titles are properly aligned to the left */
+}
 
 
 
