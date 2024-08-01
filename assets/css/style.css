@@ -903,6 +903,13 @@ main {
   font-weight: bold; /* Make the heading bold */
 }
 
+.skill .title-wrapper data {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+	
+}
+
 .certification-description {
   margin-top: 5px;
   font-size: var(--fs-5);
