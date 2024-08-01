@@ -800,6 +800,7 @@ main {
   align-items: center;
   gap: 15px;
   margin-bottom: 25px;
+  justify-content: flex-start;
 }
 
 .timeline-list {
@@ -937,7 +938,7 @@ main {
 .timeline-title-left {
   text-align: left;
   margin-left: 0; /* Ensure the titles are properly aligned to the left */
-  align-self: flex-start; /* Ensure the title wrapper aligns to the start */
+  width: 100%; /* Ensure the title wrapper aligns to the start */
 }
 
 
