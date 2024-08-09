@@ -207,23 +207,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 
-  // Get the modal
-var modal = document.getElementById("imageModal");
 
-// Get the modal image and caption
-var modalImg = document.getElementById("modalImage");
-var captionText = document.getElementById("caption");
-
-// Get all images and set up click event
-var images = document.querySelectorAll(".blog-banner-box img");
-images.forEach(image => {
-  image.addEventListener("click", function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-    captionText.innerHTML = this.alt;
-  });
-});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
