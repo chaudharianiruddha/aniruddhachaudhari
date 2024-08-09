@@ -184,7 +184,38 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// Get the modal
+var modal = document.getElementById("imageModal");
 
+// Get the modal image and caption
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("caption");
+
+// Get all images and set up click event
+var images = document.querySelectorAll(".blog-banner-box img");
+images.forEach(image => {
+  image.addEventListener("click", function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+  });
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+// Close modal when clicking outside the image
+modal.addEventListener("click", function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
 
 
 
