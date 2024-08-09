@@ -1462,7 +1462,7 @@ main {
 
 
 /*-----------------------------------*\
-  #BLOG
+  #CERTIFICATION
 \*-----------------------------------*/
 
 .blog-posts { margin-bottom: 10px; }
@@ -1974,7 +1974,7 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * #PORTFOLIO, BLOG
+   * #PORTFOLIO, CERTIFICAATION
    */
 
   .project-img, .blog-banner-box { border-radius: 16px; }
@@ -2093,7 +2093,7 @@ textarea.form-input::-webkit-resizer {
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
-  /* portfolio and blog grid */
+  /* portfolio and certification grid */
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
@@ -2220,7 +2220,7 @@ textarea.form-input::-webkit-resizer {
 
 
   /**
-   * BLOG
+   * CERTIFICATION
    */
 
   .blog-banner-box { height: 230px; }
