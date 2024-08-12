@@ -953,63 +953,215 @@
     - #EXPANSION OF PORTFOLIO POSTS
   -->
           
-          <div class="portfolio-modal-container" id="project-modal">
-            <div class="portfolio-overlay"></div>
-            <div class="portfolio-modal">
-              <span class="portfolio-modal-close-btn">&times;</span>
-              <div class="modal-image">
-                <img src="./assets/images/project-1.jpg" alt="Project Detail Image" loading="lazy">
-              </div>
-              <h3 class="portfolio-modal-title">Project Title</h3>
-              <p class="modal-date">14 June, 2021</p>
-              <p class="portfolio-modal-content">
-                To summarize, this project stands out due to its balance of technical aspects and innovative solutions. Detailed explanations about its components and functioning are available here.
-              </p>
-              <div class="additional-content">
-                <div class="blog-image">
-                  <img src="./assets/images/project-1.jpg" alt="Additional Image" loading="lazy">
-                </div>
-                <p class="blog-description">This is an additional description for more details.</p>
-                <div class="blog-image">
-                  <img src="./assets/images/project-1.jpg" alt="Another Image" loading="lazy">
-                </div>
-              </div>
-              
-              <!-- Add this button at the end of the modal -->
-              <a href="https://github.com/brenmathew" class="project-link-button" target="_blank">Link to the entire project</a> 
+  <article class="portfolio" data-page="portfolio">
+
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <section class="projects">
+
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Data Analytics</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Visualization</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>SQL</button>
+      </li>
+    </ul>
+
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>Select category</div>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+      </button>
+
+      <ul class="select-list">
+        <li class="select-item">
+          <button data-select-item>All</button>
+        </li>
+        <li class="select-item">
+          <button data-select-item>Data Analytics</button>
+        </li>
+        <li class="select-item">
+          <button data-select-item>Visualization</button>
+        </li>
+        <li class="select-item">
+          <button data-select-item>SQL</button>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="project-list">
+      <!-- Project 1 -->
+      <li class="project-item active" data-filter-item data-category="Data Analytics">
+        <a href="#" class="project-link">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
             </div>
-          </div>
+            <img src="./assets/images/flightdatadash.png" alt="Python" loading="lazy">
+          </figure>
+          <h3 class="project-title">Python</h3>
+          <p class="project-category">Data Analytics</p>
+        </a>
+      </li>
 
-          <div class="portfolio-modal-container" id="project-modal-2">
-            <div class="portfolio-overlay"></div>
-            <div class="portfolio-modal">
-              <span class="portfolio-modal-close-btn">&times;</span>
-              <div class="modal-image">
-                <img src="./assets/images/project-2.png" alt="Project Detail Image" loading="lazy">
-              </div>
-              <h3 class="portfolio-modal-title">Orizon</h3>
-              <p class="modal-date">14 June, 2021</p>
-              <p class="portfolio-modal-content">
-                To summarize, this project stands out due to its balance of technical aspects and innovative solutions. Detailed explanations about its components and functioning are available here.
-              </p>
-              <div class="additional-content">
-                <div class="blog-image">
-                  <img src="./assets/images/project-2.png" alt="Additional Image" loading="lazy">
-                </div>
-                <p class="blog-description">This is an additional description for more details.</p>
-                <div class="blog-image">
-                  <img src="./assets/images/project-2.png" alt="Another Image" loading="lazy">
-                </div>
-              </div>
+      <!-- Project 2 -->
+      <li class="project-item active" data-filter-item data-category="Data Analytics & Visualization">
+        <a href="#" class="project-link">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
             </div>
-          </div>
+            <img src="./assets/images/cardatadash.png" alt="R" loading="lazy">
+          </figure>
+          <h3 class="project-title">R</h3>
+          <p class="project-category">Data Analytics & Visualization</p>
+        </a>
+      </li>
 
+      <!-- Project 3 -->
+      <li class="project-item active" data-filter-item data-category="Data Analytics & Sales">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/salesanalysisdash.png" alt="Python" loading="lazy">
+          </figure>
+          <h3 class="project-title">Python</h3>
+          <p class="project-category">Data Analytics & Sales</p>
+        </a>
+      </li>
 
-          
-        </section>
+      <!-- Project 4 -->
+      <li class="project-item active" data-filter-item data-category="applications">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/p5.jpg" alt="brawlhalla" loading="lazy">
+          </figure>
+          <h3 class="project-title">Transit Reservation System Analysis</h3>
+          <p class="project-category">MySQL</p>
+        </a>
+      </li>
 
-      </article>
+      <!-- Project 5 -->
+      <li class="project-item active" data-filter-item data-category="web design">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="./assets/images/p4.jpeg" alt="dsm." loading="lazy">
+          </figure>
+          <h3 class="project-title">CyberSecurity</h3>
+          <p class="project-category">Hashcat</p>
+        </a>
+      </li>
+    </ul>
 
+  </section>
+
+  <!-- Expansion Modals -->
+
+  <!-- Modal for Project 1 -->
+  <div class="portfolio-modal-container" id="project-modal-1">
+    <div class="portfolio-overlay"></div>
+    <div class="portfolio-modal">
+      <span class="portfolio-modal-close-btn">&times;</span>
+      <div class="modal-image">
+        <img src="./assets/images/flightdatadash.png" alt="Project Detail Image" loading="lazy">
+      </div>
+      <h3 class="portfolio-modal-title">Python - Flight Data Analysis</h3>
+      <p class="modal-date">2023</p>
+      <p class="portfolio-modal-content">
+        Implemented a data collection pipeline using Docker Desktop and extracted samples from large airline flight datasets, ensuring key features like flight delays and carrier information were retained. Conducted comprehensive data cleaning and merged datasets into a single entity, utilizing advanced Pandas operations for optimal data format and analysis. Trained and evaluated machine learning models (Ridge regression and decision trees) to predict flight delays, achieving 97% accuracy and providing actionable insights for improving flight scheduling.
+      </p>
+      <a href="https://github.com/yourusername/flight-data-analysis" class="project-link-button" target="_blank">Link to the entire project</a>
+    </div>
+  </div>
+
+  <!-- Modal for Project 2 -->
+  <div class="portfolio-modal-container" id="project-modal-2">
+    <div class="portfolio-overlay"></div>
+    <div class="portfolio-modal">
+      <span class="portfolio-modal-close-btn">&times;</span>
+      <div class="modal-image">
+        <img src="./assets/images/cardatadash.png" alt="Project Detail Image" loading="lazy">
+      </div>
+      <h3 class="portfolio-modal-title">R - Predicting the Sales Price of Preowned Cars</h3>
+      <p class="modal-date">2023</p>
+      <p class="portfolio-modal-content">
+        Led a team of 6 to achieve a 96% accuracy in predicting car prices using R. Established a scalable framework for diverse datasets, extending the project's impact beyond immediate scope. Developed a comprehensive data analysis pipeline including data cleaning, exploration, visualization, model training, and evaluation.
+      </p>
+      <a href="https://github.com/yourusername/car-price-prediction" class="project-link-button" target="_blank">Link to the entire project</a>
+    </div>
+  </div>
+
+  <!-- Modal for Project 3 -->
+  <div class="portfolio-modal-container" id="project-modal-3">
+    <div class="portfolio-overlay"></div>
+    <div class="portfolio-modal">
+      <span class="portfolio-modal-close-btn">&times;</span>
+      <div class="modal-image">
+        <img src="./assets/images/salesanalysisdash.png" alt="Project Detail Image" loading="lazy">
+      </div>
+      <h3 class="portfolio-modal-title">Python - Supermarket Sales Analysis</h3>
+      <p class="modal-date">2024</p>
+      <p class="portfolio-modal-content">
+        Analyzed supermarket sales data to gain insights into product performance, customer behavior, and revenue trends. Delivered valuable visualizations and information to improve sales strategies and decision-making. Answered key questions about product sales, profitability, customer segments, and more.
+      </p>
+      <a href="https://github.com/yourusername/sales-analysis" class="project-link-button" target="_blank">Link to the entire project</a>
+    </div>
+  </div>
+
+  <!-- Modal for Project 4 -->
+  <div class="portfolio-modal-container" id="project-modal-4">
+    <div class="portfolio-overlay"></div>
+    <div class="portfolio-modal">
+      <span class="portfolio-modal-close-btn">&times;</span>
+      <div class="modal-image">
+        <img src="./assets/images/p5.jpg" alt="Project Detail Image" loading="lazy">
+      </div>
+      <h3 class="portfolio-modal-title">Transit Reservation System Analysis</h3>
+      <p class="modal-date">2023</p>
+      <p class="portfolio-modal-content">
+        Enhanced database normalization, streamlining data organization and minimizing redundancy. Refined database schema, improved Reservation table design, and added new attributes. Analyzed booking percentages, revenue trends, and demographic data using SQL queries.
+      </p>
+      <a href="https://github.com/yourusername/transit-reservation-system" class="project-link-button" target="_blank">Link to the entire project</a>
+    </div>
+  </div>
+
+  <!-- Modal for Project 5 -->
+  <div class="portfolio-modal-container" id="project-modal-5">
+    <div class="portfolio-overlay"></div>
+    <div class="portfolio-modal">
+      <span class="portfolio-modal-close-btn">&times;</span>
+      <div class="modal-image">
+        <img src="./assets/images/p4.jpeg" alt="Project Detail Image" loading="lazy">
+      </div>
+      <h3 class="portfolio-modal-title">CyberSecurity - Hashcat Password Cracking</h3>
+      <p class="modal-date">2024</p>
+      <p class="portfolio-modal-content">
+        Completed a job simulation as a Goldman Sachs governance analyst responsible for assessing IT security and suggesting improvements. Identified that the company was using an outdated password hashing algorithm by cracking passwords using Hashcat. Wrote a memo summarizing proposed uplifts to increase the company’s level of password protection, including extending minimum password length and using a dedicated hashing algorithm.
+      </p>
+      <a href="https://github.com/yourusername/cybersecurity-hashcat" class="project-link-button" target="_blank">Link to the entire project</a>
+    </div>
+  </div>
+
+</article>
 
 
 
