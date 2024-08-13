@@ -139,10 +139,28 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //Share button
-document.getElementById('share-button').addEventListener('click', function () {
-  var shareOptions = document.getElementById('share-options');
-  shareOptions.style.display = shareOptions.style.display === 'block' ? 'none' : 'block';
+document.addEventListener("DOMContentLoaded", function() {
+  const shareButton = document.getElementById("share-button");
+  const shareOptions = document.getElementById("share-options");
+
+  shareButton.addEventListener("click", function() {
+    shareOptions.classList.toggle("active");
+    if (shareOptions.classList.contains("active")) {
+      shareOptions.style.display = "block";
+    } else {
+      shareOptions.style.display = "none";
+    }
+  });
+
+  // Optional: Close the share options when clicking outside of it
+  window.addEventListener("click", function(event) {
+    if (!shareButton.contains(event.target) && !shareOptions.contains(event.target)) {
+      shareOptions.style.display = "none";
+      shareOptions.classList.remove("active");
+    }
+  });
 });
+
 
 
 // Page navigation variables
