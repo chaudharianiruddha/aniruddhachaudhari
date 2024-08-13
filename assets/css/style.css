@@ -2135,10 +2135,11 @@ textarea.form-input::-webkit-resizer {
 
 /* Share Options Styling */
 .share-options {
-  display: none;
-  position: absolute;
+  display: flex;
+  position: fixed;
   bottom: 60px; /* Adjust this value to control how far above the button the options appear */
   right: 0;
+  z-index: 1000; /* Ensure it's on top of other elements */
   background-color: #444;
   padding: 10px;
   border-radius: 5px;
