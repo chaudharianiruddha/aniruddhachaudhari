@@ -2112,10 +2112,27 @@ textarea.form-input::-webkit-resizer {
 
 /* Style the share container */
 .share-container {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+}
+
+/* Ensuring that on smaller screens, the button does not overflow */
+@media (max-width: 768px) {
+  .share-container {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .share-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  
+  .share-options {
+    font-size: 14px;
+  }
 }
 
 .share-button {
@@ -2152,7 +2169,6 @@ textarea.form-input::-webkit-resizer {
 .share-option:hover {
   color: var(--text-gradient-yellow);
 }
-
 
 
 
